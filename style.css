@@ -19,6 +19,10 @@ body{
 }
 .navbar__s1__title{
     color: #A435F0;
+    cursor: pointer;
+}
+.navbar__s1__title:hover{
+ text-decoration: underline;
 }
 .navbar__s2{
     padding: 10px;
@@ -45,6 +49,9 @@ background-color: transparent;
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.navbar__s4{
+    display: none;
 }
 .mylearning{
     position: relative;
@@ -103,6 +110,7 @@ display: none;
     justify-content: space-between;
     margin-top: 10px;
     flex-wrap: wrap;
+    
 }
 .topics{
     padding: 5px;
@@ -122,7 +130,7 @@ display: none;
     padding: 10px;
     border: solid grey 2px;
     flex-grow: 1;
-    flex-basis: 15%;
+    flex-basis: 20%;
 
 }
 .topics__container p:hover{
@@ -160,4 +168,28 @@ display: none;
 }
 .footer p:hover{
 text-decoration: underline;
+}
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+.course-card{
+    flex-basis: 40%;
+}    
+.categories{
+    display: none;
+}
+.navbar__s2,.navbar__s3{
+    display: none;
+}
+.topics__container{
+    flex-basis: 50%;
+}
+.navbar__s4{
+    display: block;
+    cursor: pointer;
+}
 }
